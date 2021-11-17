@@ -1,0 +1,12 @@
+type Day{
+    key:String
+    day:Int
+    month:Int
+    year:Int
+    dow:Int
+    today:Boolean
+}
+
+extend type Query{
+    getDaysInMonth(y:Int!,m:Int!) : [Day]
+}

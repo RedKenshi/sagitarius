@@ -1,0 +1,6 @@
+type Cost{
+    iron:Int!
+    steel:Int!
+    carbon:Int!
+    cristal:Int!
+}

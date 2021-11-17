@@ -1,0 +1,9 @@
+type Economy{
+    _id: String
+    user: String
+    currencies: [Currency]
+}
+
+extend type Query{
+    economy(user:String!): Economy
+}

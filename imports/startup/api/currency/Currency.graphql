@@ -1,0 +1,19 @@
+type Currency{
+    name: String!
+    stored: Int!
+    lastUpdate: String!
+    color: String!
+    produceMinute: String!
+    max: String!
+    level: Int!
+    cost: Cost!
+}
+
+extend type Query{
+    currencies(user:String!): [Currency]
+}
+
+extend type Mutation{
+    updateStored(user:String!) : Boolean
+    levelupCurrency(user:String!,currency:String!) : Boolean
+}

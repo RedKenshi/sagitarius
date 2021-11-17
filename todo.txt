@@ -1,0 +1,10 @@
+
+PROD
+=C3*(1+(0,04*ABS(((29-$A$4)/($A$4)))))
+
+
+COST
+=B3*(1+(0,045*ABS(((20-$A$4)/$A$4+6))))
+
+=> upgrade resolver
+=> stop when full
